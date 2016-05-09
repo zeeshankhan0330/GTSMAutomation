@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GTSM]" parallel="none">
+  <test name="Regression(failed)" parallel="none">
+    <classes>
+      <class name="testcases.TC001_Add_Organization">
+        <methods>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC001_Add_Organization -->
+      <class name="testcases.TC003_Delete_Organization">
+        <methods>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC003_Delete_Organization -->
+      <class name="testcases.TC011_Delete_Country">
+        <methods>
+          <include name="deleteCountry"/>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC011_Delete_Country -->
+      <class name="testcases.TC006_Add_new_Airline">
+        <methods>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC006_Add_new_Airline -->
+      <class name="testcases.TC009_Add_New_Country">
+        <methods>
+          <include name="addNewCountry"/>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC009_Add_New_Country -->
+      <class name="testcases.TC004_Suspend_Agency">
+        <methods>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC004_Suspend_Agency -->
+      <class name="testcases.TC002_Update_Organization">
+        <methods>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC002_Update_Organization -->
+      <class name="testcases.TC005_Activate_Agency">
+        <methods>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC005_Activate_Agency -->
+      <class name="testcases.TC010_Modify_Country">
+        <methods>
+          <include name="updateCountry"/>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC010_Modify_Country -->
+      <class name="testcases.TC007_Modify_Airline">
+        <methods>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC007_Modify_Airline -->
+      <class name="testcases.TC008_Delete_Airline">
+        <methods>
+          <include name="deleteAirline"/>
+          <include name="initiate"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testcases.TC008_Delete_Airline -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [GTSM] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GTSM" parallel="none">
+  <test name="Regression">
+    <classes>
+    <class name="testcases.TC001_Add_Organization"/>
+     <class name="testcases.TC002_Update_Organization"/>
+     <class name="testcases.TC003_Delete_Organization"/>
+      <class name="testcases.TC004_Suspend_Agency"/>
+      <class name="testcases.TC005_Activate_Agency"/>
+      <class name="testcases.TC006_Add_new_Airline"/>
+      <class name="testcases.TC007_Modify_Airline"/>
+       <class name="testcases.TC008_Delete_Airline"/>
+       <class name="testcases.TC009_Add_New_Country"/>
+      <class name="testcases.TC010_Modify_Country"/>
+         
+      <class name="testcases.TC011_Delete_Country"/>
+     
+      
+      
+     
+      
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
