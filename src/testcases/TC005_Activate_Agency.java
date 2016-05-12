@@ -2,6 +2,7 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
@@ -33,6 +34,7 @@ public class TC005_Activate_Agency extends Common {
 			obj.loginAsConsultant();
 		
 		PCC_IATA_Agt_Name_Management pcc = new PCC_IATA_Agt_Name_Management(driver);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		pcc.goToHomePage();
 		 pcc.clickonPCCIATAdopdown();
 		pcc.enterAgencyNameToBeUpdated(AgencyName);

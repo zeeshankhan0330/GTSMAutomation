@@ -2,6 +2,7 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
@@ -30,6 +31,7 @@ public class TC003_Delete_Organization extends Common {
 			String UpdatedOrganizationType = c5.getContents();
 			
 			 Login obj = new Login(driver);
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				obj.loginAsConsultant();
 			
 			

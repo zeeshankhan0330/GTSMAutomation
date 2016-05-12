@@ -15,8 +15,8 @@ public class Login {
 	
 	
 	
-ChromeDriver driver;
-public Login(ChromeDriver driver){
+WebDriver driver;
+public Login(WebDriver driver){
 	this.driver = driver;
 }
 	

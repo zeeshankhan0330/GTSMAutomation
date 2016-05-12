@@ -2,11 +2,13 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
+
 
 
 import org.testng.annotations.Test;
@@ -38,6 +40,7 @@ public class TC007_Modify_Airline extends Common {
 		
 		
 			Airline_Management air = new Airline_Management(driver);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		air.goToHomePage();
 		air.clickOnAirlineManagementLink();
 		air.enterAirlineCodeToBeUpdated(AirlineCode);

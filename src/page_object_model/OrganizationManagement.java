@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -13,15 +14,15 @@ import org.testng.Assert;
 
 public class OrganizationManagement  {
 
-	ChromeDriver driver;
-	public OrganizationManagement(ChromeDriver driver)
+	WebDriver driver;
+	public OrganizationManagement(WebDriver driver)
 	{
 		this.driver = driver;
 	}
 	
 	public void clickOnOrganizationManagementLink ()
 	{
-		driver.findElement(By.xpath("//li[@id='adminORGfunctioncontentmenuitem5']/a[@href='/Organization/OrganizationManagement']")).click();
+		driver.findElement(By.xpath("//li[@id='adminORGfunctioncontentmenuitem5']/a")).click();
 			}
 	
 	public void clickOnAddTab()
@@ -76,7 +77,7 @@ public class OrganizationManagement  {
 	
 	public void goToHomePage()
 	{
-		driver.findElementByLinkText("Home").click();
+		driver.findElement(By.xpath(".//li[@id='home']/a")).click();
 	}
 	
 	public void enterOrgName(String OrganizationName)

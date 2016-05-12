@@ -6,13 +6,14 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
 
 public class Utility  {
 
-	public static void captureScreenShot(ChromeDriver driver, String ScreenshotName ) throws IOException
+	public static void captureScreenShot(WebDriver driver, String ScreenshotName ) throws IOException
 	
 	{
 		try {

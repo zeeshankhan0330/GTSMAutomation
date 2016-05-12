@@ -2,10 +2,12 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 
 
 
@@ -46,6 +48,7 @@ public class TC001_Add_Organization extends Common {
 	
 		 
 		 Login obj = new Login(driver);
+		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		obj.loginAsConsultant();
 	
 		

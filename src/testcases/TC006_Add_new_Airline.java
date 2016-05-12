@@ -2,6 +2,7 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import jxl.Cell;
 import jxl.Sheet;
@@ -34,6 +35,7 @@ public class TC006_Add_new_Airline extends Common {
 		login.loginAsAdmin();
 		
 		Airline_Management air = new Airline_Management(driver);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		air.clickOnAirlineManagementLink();
 		air.clickOnAddTab();
 		air.enterNewAirlineCode(AirlineCode);

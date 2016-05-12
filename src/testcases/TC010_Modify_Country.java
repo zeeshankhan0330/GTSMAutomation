@@ -2,6 +2,7 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import jxl.Cell;
 import jxl.Sheet;
@@ -34,6 +35,7 @@ public class TC010_Modify_Country extends Common {
 		 
 		 
 		 Region_Management rm = new Region_Management(driver);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 rm.goToHomePage();
 		 rm.clickOnRegionManagementLink();
 		 rm.enterCountryCodeToBeUpdated(CountryCode);

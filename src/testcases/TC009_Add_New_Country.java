@@ -2,6 +2,7 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import jxl.Cell;
 import jxl.Sheet;
@@ -31,6 +32,7 @@ public class TC009_Add_New_Country extends Common {
 			login.loginAsAdmin();
 		 
 		 Region_Management rm = new Region_Management(driver);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 rm.clickOnRegionManagementLink();
 		 rm.clickOnAddTab();
 		 rm.enterNewCountryCode(CountryCode);

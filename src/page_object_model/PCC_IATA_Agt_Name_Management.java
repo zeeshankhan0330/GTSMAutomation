@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -11,16 +12,16 @@ import org.testng.Assert;
 
 public class PCC_IATA_Agt_Name_Management {
 
-	ChromeDriver driver;
-	public PCC_IATA_Agt_Name_Management(ChromeDriver driver)
+	WebDriver driver;
+	public PCC_IATA_Agt_Name_Management(WebDriver driver)
 	{
 		this.driver = driver;
 	}
 	
 	public void clickonPCCIATAdopdown()
 	{
-		//WebElement lMail=driver.findElement(By.xpath("//li[@id='adminfunctions']/a[@class='a-glob_menu_link']"));
-		WebElement lMail=driver.findElement(By.linkText("PCC/IATA/Agent Name Management"));
+		WebElement lMail=driver.findElement(By.xpath(".//*[@id='adminPCCIATAfunctioncontentmenuitem3']/a"));
+		//WebElement lMail=driver.findElement(By.linkText("PCC/IATA/Agent Name Management"));
 		lMail.click();
        /* Actions builder=new Actions(driver);
         builder.moveToElement(lMail).perform();
@@ -29,7 +30,10 @@ public class PCC_IATA_Agt_Name_Management {
 	
 	public void enterAgencyName(String AgencyName)
 	{
+	
+		
 		driver.findElement(By.xpath("//div/input[@id='gs_agentname' and @name='agentname']")).sendKeys(AgencyName);
+		
 	}
 	
 	public void enterIataNumber(String IATANumber)
@@ -79,7 +83,7 @@ public class PCC_IATA_Agt_Name_Management {
 	
 	public void goToHomePage()
 	{
-		driver.findElementByLinkText("Home").click();
+		driver.findElement(By.xpath(".//li[@id='home']/a")).click();
 	}
 	
 	public void enterAgencyNameToBeUpdated(String AgencyName)

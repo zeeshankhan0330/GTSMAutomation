@@ -2,6 +2,7 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import jxl.Cell;
 import jxl.Sheet;
@@ -32,6 +33,7 @@ public class TC008_Delete_Airline extends Common {
 		
 		Airline_Management air = new Airline_Management(driver);
 		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		air.clickOnAirlineManagementLink();
 		air.enterAirlineCodeToBeUpdated(AirlineCode);
 		air.enterUpdatedAirlineDescription(UpdatedDescription);

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/11</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 09 15:16:58 AEST 2016</td>
+<td>Started on:</td><td>Tue May 10 16:57:40 AEST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>137 seconds (137511 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (48 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,161 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC001_Add_Organization.initiate()'><b>initiate</b><br>Test class: testcases.TC001_Add_Organization</td>
+<td><div><pre>org.testng.TestNGException: 
+Method initiate requires 1 parameters but 0 were supplied in the @Configuration annotation.
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32659194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32659194'><pre>org.testng.TestNGException: 
+Method initiate requires 1 parameters but 0 were supplied in the @Configuration annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>testcases.TC001_Add_Organization@6a03af</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC002_Update_Organization.initiate()'><b>initiate</b><br>Test class: testcases.TC002_Update_Organization</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC002_Update_Organization@1e0f4f</td></tr>
+<tr>
+<td title='testcases.TC003_Delete_Organization.initiate()'><b>initiate</b><br>Test class: testcases.TC003_Delete_Organization</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC003_Delete_Organization@864e92</td></tr>
+<tr>
+<td title='testcases.TC004_Suspend_Agency.initiate()'><b>initiate</b><br>Test class: testcases.TC004_Suspend_Agency</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC004_Suspend_Agency@a6d14e</td></tr>
+<tr>
+<td title='testcases.TC005_Activate_Agency.initiate()'><b>initiate</b><br>Test class: testcases.TC005_Activate_Agency</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC005_Activate_Agency@d5c04e</td></tr>
+<tr>
+<td title='testcases.TC006_Add_new_Airline.initiate()'><b>initiate</b><br>Test class: testcases.TC006_Add_new_Airline</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC006_Add_new_Airline@33ce2c</td></tr>
+<tr>
+<td title='testcases.TC007_Modify_Airline.initiate()'><b>initiate</b><br>Test class: testcases.TC007_Modify_Airline</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC007_Modify_Airline@5bef66</td></tr>
+<tr>
+<td title='testcases.TC008_Delete_Airline.initiate()'><b>initiate</b><br>Test class: testcases.TC008_Delete_Airline</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC008_Delete_Airline@af7cc2</td></tr>
+<tr>
+<td title='testcases.TC009_Add_New_Country.initiate()'><b>initiate</b><br>Test class: testcases.TC009_Add_New_Country</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC009_Add_New_Country@3c1e69</td></tr>
+<tr>
+<td title='testcases.TC010_Modify_Country.initiate()'><b>initiate</b><br>Test class: testcases.TC010_Modify_Country</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC010_Modify_Country@88ff2c</td></tr>
+<tr>
+<td title='testcases.TC011_Delete_Country.initiate()'><b>initiate</b><br>Test class: testcases.TC011_Delete_Country</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC011_Delete_Country@1851384</td></tr>
+<tr>
+<td title='testcases.TC001_Add_Organization.TearDown()'><b>TearDown</b><br>Test class: testcases.TC001_Add_Organization</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC001_Add_Organization@6a03af</td></tr>
+<tr>
+<td title='testcases.TC002_Update_Organization.TearDown()'><b>TearDown</b><br>Test class: testcases.TC002_Update_Organization</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC002_Update_Organization@1e0f4f</td></tr>
+<tr>
+<td title='testcases.TC003_Delete_Organization.TearDown()'><b>TearDown</b><br>Test class: testcases.TC003_Delete_Organization</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC003_Delete_Organization@864e92</td></tr>
+<tr>
+<td title='testcases.TC004_Suspend_Agency.TearDown()'><b>TearDown</b><br>Test class: testcases.TC004_Suspend_Agency</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC004_Suspend_Agency@a6d14e</td></tr>
+<tr>
+<td title='testcases.TC005_Activate_Agency.TearDown()'><b>TearDown</b><br>Test class: testcases.TC005_Activate_Agency</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC005_Activate_Agency@d5c04e</td></tr>
+<tr>
+<td title='testcases.TC006_Add_new_Airline.TearDown()'><b>TearDown</b><br>Test class: testcases.TC006_Add_new_Airline</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC006_Add_new_Airline@33ce2c</td></tr>
+<tr>
+<td title='testcases.TC007_Modify_Airline.TearDown()'><b>TearDown</b><br>Test class: testcases.TC007_Modify_Airline</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC007_Modify_Airline@5bef66</td></tr>
+<tr>
+<td title='testcases.TC008_Delete_Airline.TearDown()'><b>TearDown</b><br>Test class: testcases.TC008_Delete_Airline</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC008_Delete_Airline@af7cc2</td></tr>
+<tr>
+<td title='testcases.TC009_Add_New_Country.TearDown()'><b>TearDown</b><br>Test class: testcases.TC009_Add_New_Country</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC009_Add_New_Country@3c1e69</td></tr>
+<tr>
+<td title='testcases.TC010_Modify_Country.TearDown()'><b>TearDown</b><br>Test class: testcases.TC010_Modify_Country</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC010_Modify_Country@88ff2c</td></tr>
+<tr>
+<td title='testcases.TC011_Delete_Country.TearDown()'><b>TearDown</b><br>Test class: testcases.TC011_Delete_Country</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC011_Delete_Country@1851384</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -77,58 +230,58 @@ function toggleAllBoxes() {
 <tr>
 <td title='testcases.TC005_Activate_Agency.activateAgency()'><b>activateAgency</b><br>Test class: testcases.TC005_Activate_Agency</td>
 <td></td>
-<td>8</td>
-<td>testcases.TC005_Activate_Agency@b39c39</td></tr>
+<td>0</td>
+<td>testcases.TC005_Activate_Agency@d5c04e</td></tr>
 <tr>
 <td title='testcases.TC006_Add_new_Airline.addNewAirline()'><b>addNewAirline</b><br>Test class: testcases.TC006_Add_new_Airline</td>
 <td></td>
-<td>2</td>
-<td>testcases.TC006_Add_new_Airline@ee9593</td></tr>
+<td>0</td>
+<td>testcases.TC006_Add_new_Airline@33ce2c</td></tr>
 <tr>
 <td title='testcases.TC009_Add_New_Country.addNewCountry()'><b>addNewCountry</b><br>Test class: testcases.TC009_Add_New_Country</td>
 <td></td>
-<td>2</td>
-<td>testcases.TC009_Add_New_Country@1e0f4f</td></tr>
+<td>0</td>
+<td>testcases.TC009_Add_New_Country@3c1e69</td></tr>
 <tr>
 <td title='testcases.TC001_Add_Organization.addOrganization()'><b>addOrganization</b><br>Test class: testcases.TC001_Add_Organization</td>
 <td></td>
-<td>9</td>
-<td>testcases.TC001_Add_Organization@1ffcba5</td></tr>
+<td>0</td>
+<td>testcases.TC001_Add_Organization@6a03af</td></tr>
 <tr>
 <td title='testcases.TC008_Delete_Airline.deleteAirline()'><b>deleteAirline</b><br>Test class: testcases.TC008_Delete_Airline</td>
 <td></td>
-<td>16</td>
-<td>testcases.TC008_Delete_Airline@6a03af</td></tr>
+<td>0</td>
+<td>testcases.TC008_Delete_Airline@af7cc2</td></tr>
 <tr>
 <td title='testcases.TC011_Delete_Country.deleteCountry()'><b>deleteCountry</b><br>Test class: testcases.TC011_Delete_Country</td>
 <td></td>
-<td>8</td>
-<td>testcases.TC011_Delete_Country@a6d14e</td></tr>
+<td>0</td>
+<td>testcases.TC011_Delete_Country@1851384</td></tr>
 <tr>
 <td title='testcases.TC003_Delete_Organization.deleteOrganization()'><b>deleteOrganization</b><br>Test class: testcases.TC003_Delete_Organization</td>
 <td></td>
-<td>8</td>
-<td>testcases.TC003_Delete_Organization@afb23c</td></tr>
+<td>0</td>
+<td>testcases.TC003_Delete_Organization@864e92</td></tr>
 <tr>
 <td title='testcases.TC007_Modify_Airline.modifyAirline()'><b>modifyAirline</b><br>Test class: testcases.TC007_Modify_Airline</td>
 <td></td>
-<td>8</td>
-<td>testcases.TC007_Modify_Airline@107ec20</td></tr>
+<td>0</td>
+<td>testcases.TC007_Modify_Airline@5bef66</td></tr>
 <tr>
 <td title='testcases.TC004_Suspend_Agency.suspendAgency()'><b>suspendAgency</b><br>Test class: testcases.TC004_Suspend_Agency</td>
 <td></td>
-<td>8</td>
-<td>testcases.TC004_Suspend_Agency@180d80f</td></tr>
+<td>0</td>
+<td>testcases.TC004_Suspend_Agency@a6d14e</td></tr>
 <tr>
 <td title='testcases.TC010_Modify_Country.updateCountry()'><b>updateCountry</b><br>Test class: testcases.TC010_Modify_Country</td>
 <td></td>
-<td>8</td>
-<td>testcases.TC010_Modify_Country@864e92</td></tr>
+<td>0</td>
+<td>testcases.TC010_Modify_Country@88ff2c</td></tr>
 <tr>
 <td title='testcases.TC002_Update_Organization.updateOrganization()'><b>updateOrganization</b><br>Test class: testcases.TC002_Update_Organization</td>
 <td></td>
-<td>8</td>
-<td>testcases.TC002_Update_Organization@340fab</td></tr>
+<td>0</td>
+<td>testcases.TC002_Update_Organization@1e0f4f</td></tr>
 </table><p>
 </body>
 </html>

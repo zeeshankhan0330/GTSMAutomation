@@ -4,7 +4,10 @@ import java.io.File;
 import java.io.IOException;
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.Test;
+
 
 
 
@@ -49,6 +52,7 @@ public class TC002_Update_Organization extends Common {
 		
 		
 		OrganizationManagement org1 = new OrganizationManagement(driver);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		org1.goToHomePage();
 		org1.clickOnOrganizationManagementLink();
 		

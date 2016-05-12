@@ -2,6 +2,7 @@ package testcases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
@@ -34,6 +35,7 @@ public class TC004_Suspend_Agency extends Common {
 			obj.loginAsConsultant();
 		 
 		 PCC_IATA_Agt_Name_Management pcc = new PCC_IATA_Agt_Name_Management(driver);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		 pcc.clickonPCCIATAdopdown();
 		 pcc.enterAgencyName(AgencyName);
 		 pcc.enterIataNumber(IATANumber);

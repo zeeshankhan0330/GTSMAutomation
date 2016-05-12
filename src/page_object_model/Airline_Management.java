@@ -4,14 +4,15 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class Airline_Management {
 	
-	ChromeDriver driver;
-	public Airline_Management(ChromeDriver driver){
+	WebDriver driver;
+	public Airline_Management(WebDriver driver){
 	this.driver = driver;
 	}
 	public void clickOnAirlineManagementLink()
@@ -50,7 +51,7 @@ public class Airline_Management {
 	
 	public void goToHomePage()
 	{
-		driver.findElementByLinkText("Home").click();
+		driver.findElement(By.xpath(".//li[@id='home']/a")).click();
 	}
 	
 	public void enterAirlineCodeToBeUpdated(String AirlineCode)
